@@ -1,0 +1,27 @@
+{
+  "name": "ctm-ramp-sim",
+  "version": "1.0.0",
+  "description": "One-dimensional freeway congestion-wave and on-ramp flow simulation backend (triangular-fundamental-diagram CTM)",
+  "type": "module",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "bin": {
+    "ctm": "dist/cli/index.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node --no-warnings=ExperimentalWarning scripts/start.js",
+    "stop": "node --no-warnings=ExperimentalWarning scripts/stop.js",
+    "serve": "node --no-warnings=ExperimentalWarning dist/api/server.js",
+    "demo": "node --no-warnings=ExperimentalWarning dist/cli/index.js demo",
+    "test": "node --no-warnings=ExperimentalWarning --import tsx/esm test/run.ts",
+    "clean": "node --no-warnings=ExperimentalWarning scripts/clean.js"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3",
+    "@types/node": "^22.10.0"
+  },
+  "license": "MIT"
+}

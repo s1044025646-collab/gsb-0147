@@ -1,0 +1,7 @@
+{
+  "demand": [
+    { "tStart": 0, "tEnd": 60, "mainFlow": 1800, "rampFlow": 300 },
+    { "tStart": 60, "tEnd": 180, "mainFlow": 2600, "rampFlow": 500 },
+    { "tStart": 180, "tEnd": 360, "mainFlow": 600, "rampFlow": 100 }
+  ]
+}
