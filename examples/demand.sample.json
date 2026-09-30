@@ -1,0 +1,29 @@
+{
+  "horizonSteps": 240,
+  "demand": [
+    {
+      "startStep": 0,
+      "endStep": 96,
+      "mainDemand": 1500,
+      "rampDemand": 700,
+      "meterRate": "off",
+      "capacityFactor": 1
+    },
+    {
+      "startStep": 96,
+      "endStep": 168,
+      "mainDemand": 1500,
+      "rampDemand": 700,
+      "meterRate": 400,
+      "capacityFactor": 0.5
+    },
+    {
+      "startStep": 168,
+      "endStep": 240,
+      "mainDemand": 900,
+      "rampDemand": 300,
+      "meterRate": "off",
+      "capacityFactor": 1
+    }
+  ]
+}

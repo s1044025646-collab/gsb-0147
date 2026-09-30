@@ -1,0 +1,23 @@
+{
+  "name": "ctm-ramp-sim",
+  "version": "1.0.0",
+  "description": "One-dimensional triangular-fundamental-diagram CTM road congestion wave and on-ramp flow simulation backend (API + CLI, TypeScript, Node.js, SQLite).",
+  "type": "module",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "scripts": {
+    "demo": "node --experimental-sqlite src/demo.ts",
+    "start": "node --experimental-sqlite src/serve.ts",
+    "serve:start": "powershell -ExecutionPolicy Bypass -File scripts/start.ps1",
+    "serve:stop": "powershell -ExecutionPolicy Bypass -File scripts/stop.ps1",
+    "cli": "node --experimental-sqlite src/cli.ts",
+    "test": "node --experimental-sqlite --test tests/*.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^26.6.3",
+    "typescript": "^7.0.2"
+  }
+}
